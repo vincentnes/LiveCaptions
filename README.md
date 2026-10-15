@@ -78,6 +78,11 @@ The program records the audio stream *before* it reaches your speakers:
 
 ## Troubleshooting
 
+- **"Smart App Control blocked a file that may be unsafe"** (Windows 11): files downloaded from the internet
+  are marked, and unsigned scripts like `install.bat` are blocked. Before extracting, right-click the ZIP →
+  **Properties** → tick **Unblock** → OK, then extract again. For an already extracted folder, open PowerShell
+  in it and run `Get-ChildItem -Recurse | Unblock-File`.
+  Do **not** turn Smart App Control off — it cannot be turned back on without reinstalling Windows.
 - Run **`debug_run.bat`** to see errors in a console window.
 - Log file: `%APPDATA%\LiveCaptions\log.txt`
 - The level bars next to each audio source show which device is receiving sound.
@@ -138,6 +143,14 @@ This project's code is released under the [MIT License](LICENSE). Third-party co
 - 「調整字幕位置／大小」後直接拖曳字幕框，拖右下角藍色方塊調整大小。
 - 字幕檔存在「文件\即時字幕」。
 - 詳細說明請看 [`使用說明.txt`](使用說明.txt)。
+
+### 疑難排解
+
+- **「智慧應用程式控制已封鎖可能不安全的檔案」**（Windows 11）：從網路下載的檔案會被加上標記，沒有簽章的 `install.bat` 因此被擋。
+  解壓縮**前**，在 ZIP 檔按右鍵 →「內容」→ 勾選「**解除封鎖**」→ 確定，再重新解壓縮。
+  已解壓縮的資料夾：在資料夾中開啟 PowerShell，執行 `Get-ChildItem -Recurse | Unblock-File`。
+  **不要**關閉「智慧應用程式控制」，關掉後必須重灌 Windows 才能再開啟。
+- 出問題時點兩下 `debug_run.bat` 查看錯誤訊息；紀錄檔在 `%APPDATA%\LiveCaptions\log.txt`。
 
 ### 授權
 
