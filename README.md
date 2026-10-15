@@ -92,8 +92,11 @@ The program records the audio stream *before* it reaches your speakers:
 | `debug_run.bat` | Run with a visible console for troubleshooting |
 | `requirements.txt` / `requirements-gpu.txt` | Python packages (GPU extras for NVIDIA) |
 | `使用說明.txt` | Detailed user guide (Chinese) |
+| `LICENSE` | MIT License |
 
 ## Credits & licenses
+
+This project's code is released under the [MIT License](LICENSE). Third-party components keep their own licenses:
 
 - Speech recognition: [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (MIT) with OpenAI Whisper models (MIT)
 - Offline translation: [NLLB-200 distilled 600M](https://huggingface.co/facebook/nllb-200-distilled-600M), CTranslate2 conversion
@@ -138,5 +141,6 @@ The program records the audio stream *before* it reaches your speakers:
 
 ### 授權
 
+本專案程式碼採用 [MIT 授權](LICENSE)，可自由使用、修改與分享。
 離線翻譯模型 NLLB-200 的授權為 **CC-BY-NC-4.0（僅限非商業使用）**；模型在安裝時下載，不包含在本專案中。
 語音辨識使用 faster-whisper 與 OpenAI Whisper 模型（MIT）。
