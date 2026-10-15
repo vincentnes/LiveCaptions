@@ -1,0 +1,13 @@
+faster-whisper>=1.1.0
+PyAudioWPatch>=0.2.12
+numpy
+pystray>=0.19
+Pillow
+deep-translator>=1.11
+opencc-python-reimplemented
+keyboard
+pycaw
+comtypes
+soundcard>=0.4.3
+sentencepiece
+requests
